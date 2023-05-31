@@ -20,3 +20,24 @@ Squelette d'un projet
 * Background
 * Text
 * Other
+
+## Scripts
+<dl>
+<dt>"stan": "vendor/bin/phpstan analyse -c conf/phpstan.neon",<dd>composer require phpstan/phpstan</dd><dt>
+<dt>"insights": "vendor/bin/phpinsights --config-path=conf/phpinsights.php",<dd>composer require nunomaduro/phpinsights</dd><dt>
+<dt>"insights-fix": "vendor/bin/phpinsights --f composer --config-path=conf/phpinsights.php",<dd>composer require nunomaduro/phpinsights</dd><dt>
+<dt>"insights-summary": "vendor/bin/phpinsights -s --config-path=conf/phpinsights.php",<dd>composer require nunomaduro/phpinsights</dd><dt>
+<dt>"format": "vendor/bin/phpcs --standard=PSR12 src",<dd>composer require squizlabs/php_codesniffer</dd><dt>
+<dt>"format-fix": "vendor/bin/phpcbf src",<dd>composer require squizlabs/php_codesniffer</dd><dt>
+<dt>"purge": "purgecss -c conf/purgecss.config.js",<dd>npm i -g purgecss</dd><dt>
+<dt>"tsc": "tsc -p conf/tsconfig.json",<dd></dd><dt>
+<dt>"tests": "vendor/bin/phpunit -c conf/phpunit.xml.dist",<dd>composer require phpunit/phpunit</dd><dt>
+<dt>"tests-coverage": "vendor/bin/phpunit -c conf/phpunit.xml.dist --coverage-html coverage",<dd>composer require phpunit/php-code-coverage</dd><dt>
+<dt>"tests-watcher": "vendor/bin/phpunit-watcher watch -c conf/phpunit-watcher.yml"<dd>composer require spatie/phpunit-watcher</dd><dt>
+</dl>
+  
+### Autres scripts :
+<dl>
+  <dt>Typescript :<dd>npm install typescript</dd></dt>
+  <dt>SASS :<dd>npm i sass</dd></dt>
+  </dl>
